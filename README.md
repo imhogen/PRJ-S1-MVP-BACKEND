@@ -28,21 +28,33 @@ State-driven: All workflows are governed by explicit state machines
 UI-aligned: Backend logic mirrors UI enable/disable behavior
 MVP-strict: No logic outside approved MVP scope
 Traceable: Every change maps to a Sprint task ID
-`
+
+
 Repository Structure
+
 ├── src/
-│   ├── services/        # Domain services (request, order, payment, tracking)
+
+├── services/        # Domain services (request, order, payment, tracking)
+
 │   ├── controllers/     # API controllers / request handlers
+
 │   ├── models/          # Data models and entities
+
 │   └── states/          # State machine definitions
+
 │
+
 ├── docs/
+
 │   ├── api/             # API contract specifications
+
 │   ├── schemas/         # Data model schemas
+
 │   └── state-machines/  # State diagrams and transition tables
+
 │
+
 └── README.md
-`
 
 ## Backend Domains (MVP)
 Merchant Flow

@@ -28,20 +28,35 @@ State-driven: All workflows are governed by explicit state machines
 UI-aligned: Backend logic mirrors UI enable/disable behavior
 MVP-strict: No logic outside approved MVP scope
 Traceable: Every change maps to a Sprint task ID
+
+
 Repository Structure
+
 ├── src/
-│   ├── services/        # Domain services (request, order, payment, tracking)
+
+├── services/        # Domain services (request, order, payment, tracking)
+
 │   ├── controllers/     # API controllers / request handlers
+
 │   ├── models/          # Data models and entities
+
 │   └── states/          # State machine definitions
+
 │
+
 ├── docs/
+
 │   ├── api/             # API contract specifications
+
 │   ├── schemas/         # Data model schemas
+
 │   └── state-machines/  # State diagrams and transition tables
+
 │
+
 └── README.md
-Backend Domains (MVP)
+
+## Backend Domains (MVP)
 Merchant Flow
 Request & Intake
 Datasheet Review
@@ -52,7 +67,8 @@ Order Tracking
 Support Functions
 Operations (job assignment, milestones, delivery confirmation)
 Finance (invoice generation, payment verification)
-Milestone Alignment
+
+## Milestone Alignment
 Backend work is organized by milestones that mirror the product journey:
 
 MS-BE-M1-INTAKE — Intake & Request
@@ -94,7 +110,7 @@ Data schemas
 State machines
 Documentation lives under /docs and is versioned with code.
 
-Review & Quality Control
+## Review & Quality Control
 All PRs require review
 API and state changes require explicit approval
 Breaking changes must be logged in the Change Log
@@ -107,7 +123,7 @@ Sprint Status
 Sprint 1 is focused on definition, alignment, and readiness.
 Production hardening and deployment occur in later sprints.
 
-Ownership
+## Ownership
 This repository is governed under the Project Startness Sprint Dossier.
 All contributors are expected to follow the documented execution and governance rules.
 
